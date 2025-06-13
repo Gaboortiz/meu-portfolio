@@ -1,11 +1,9 @@
-// function toggleCard(cardElement) {
-//     const para = cardElement.querySelector("p");
-//     if (para.classList.contains("hidden")) {
-//       para.classList.remove("hidden");
-//     } else {
-//       para.classList.add("hidden");
-//     }
-//   }
-  
+function mostrarTecnologias(projeto) {
+  let tecnologias = "Este projeto foi desenvolvido com HTML, CSS e JavaScript.";
 
-console.log("Portfólio carregado!");
+  if (projeto === "Site de Games") {
+    tecnologias += "\nObs: Futuramente pretendo integrar mais funcionalidades em JavaScript.";
+  }
+
+  alert("Tecnologias utilizadas em: " + projeto + "\n\n" + tecnologias);
+}

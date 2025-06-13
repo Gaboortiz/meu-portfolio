@@ -1,95 +1,48 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Olá, eu sou Gabriel Ortiz de Oliveira</h1>
-    <p>Desenvolvedor Front-End</p>
-  </header>
-
-  <section id="sobre">
-  <h2>Sobre mim:</h2>
-  <p><p>Sou um desenvolvedor front-end com experiência em HTML, CSS e JavaScript. Gosto de criar interfaces modernas e funcionais. Estou sempre buscando aprender novas tecnologias e evoluir como profissional.</p>
-</p>
-  </section>
-
-  <section id="projetos">
-    <h2>Projeto:</h2>
-    <div class="card-container">
-      <div class="card" onclick="toggleCard(this)">
-        <h3>Portfólio pessoal</h3>
-        <p class="hidden">Um site feito com HTML, CSS e JavaScript para apresentar meu projeto e minhas habilidades.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2>Você pode me encontrar em:</h2>
-    <ul>
-      <li>Email: <a href="Gabriel.ortizbatera2998@gmail.com" target="_blank">Gabriel.ortizbatera2998@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/Gaboortiz" target="_blank">Gaboortiz</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-ortiz-de-oliveira-579503271" target="_blank">Gabriel Ortiz de Oliveira</a>
-      </li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Gabriel Ortiz. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Gabriel Ortiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="img/gabriel-ortiz.jpg2.jpg" alt="Foto de Gabriel Ortiz" class="perfil">
+  <div class="profile">
+    <img src="img/gabriel-ortiz.jpg.jpg" alt="Gabriel Ortiz" class="profile-pic">
     <h1>Gabriel Ortiz de Oliveira</h1>
-    <p>Desenvolvedor Front-End</p>
-  </header>
+    <p class="subtitle">Desenvolvedor Front-End</p>
+  </div>
 
-  <section class="sobre">
+  <div class="card">
     <h2>Sobre Mim:</h2>
-    <p>Sou um desenvolvedor front-end com experiência em HTML, CSS e JavaScript. Gosto de criar interfaces modernas e funcionais. Estou sempre buscando aprender novas tecnologias e evoluir como profissional.</p>
-  </section>
+    <p>Sou um desenvolvedor front-end com experiência em HTML, CSS, JavaScript e React. Gosto de criar interfaces modernas e responsivas, buscando sempre aprendizado e evolução contínua.</p>
+  </div>
 
-  <section class="projetos">
+  <div class="card">
     <h2>Projetos:</h2>
-    <div class="card">
-      <h3>Portfólio Pessoal</h3>
-      <p>Desenvolvido com HTML, CSS e JavaScript.</p>
-    </div>
-  </section>
+    <p>
+      <strong onclick="mostrarTecnologias('Portfólio Pessoal')" class="projeto">Portfólio Pessoal:</strong><br>
+      Desenvolvido com HTML, CSS e JavaScript.
+    </p>
+    <p>
+      <strong onclick="mostrarTecnologias('Site de Games')" class="projeto">Site de Games:</strong><br>
+      Desenvolvido com HTML, CSS e JavaScript.
+    </p>
+  </div>
 
-  <section class="habilidades">
+  <div class="card">
     <h2>Habilidades:</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React</li>
-    </ul>
-  </section>
+    <div class="skills">
+      <button>HTML5</button>
+      <button>CSS3</button>
+      <button>JavaScript</button>
+      <button>React</button>
+    </div>
+  </div>
 
   <footer>
-    <p>Email: Gabriel.ortizbatera2998@gmail.com</p>
-    <li>GitHub: <a href="https://github.com/Gaboortiz" target="_blank">GitHub</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-ortiz-de-oliveira-579503271" target="_blank">LinkedIn</a>
-      </li>
-    </ul>
+    <p>Email: gabriel.ortizbatera2998@gmail.com</p>
+    <a href="https://github.com/Gaboortiz" class="icon-button">GitHub</a>
+    <a href="http://linkedin.com/in/gabriel-ortiz-de-oliveira-579503271" class="icon-button">LinkedIn</a>
   </footer>
 
   <script src="script.js"></script>
